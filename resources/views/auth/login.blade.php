@@ -59,13 +59,7 @@
                             </div>
                         </div>
 
-                        {{-- <div class="dangnhap-2">
-                            <img src="{{url('/img/Group 341.png')}}" alt="">
-                            <div class="dangnhap-2_meu-connter">
-                                <div class="dangnhap-2_connter">Hệ thống</div>
-                                <div class="dangnhap-2_connter_system" >Quản Lý xếp hàng</div>
-                            </div>
-                        </div> --}}
+
                         <div
                             class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
 

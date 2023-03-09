@@ -9343,7 +9343,7 @@ textarea.form-control-lg {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .text-decoration-none {
