@@ -202,10 +202,7 @@
                                             <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
                                         </td>
                                         <td class="align-middle">
-                                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
-                                                data-toggle="tooltip" data-original-title="Edit user">
-                                                Edit
-                                            </a>
+                                            <a href="{{ url('/question/' . $item->id . '/edit') }}" title="Edit question"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
                                         </td>
                                     </tr>
                                 </tbody>

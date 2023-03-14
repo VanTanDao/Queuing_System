@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
@@ -36,7 +36,7 @@ Route::get('/', function () {return redirect('/dashboard');})->middleware('auth'
 	Route::get('/reset-password', [ResetPassword::class, 'show'])->middleware('guest')->name('reset-password');
 	Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('guest')->name('reset.perform');
 
-    Route::resource("/thietbis", ThietbiController::class);
+    Route::resource("/thietbi", ThietbiController::class);
 
 
 	Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');

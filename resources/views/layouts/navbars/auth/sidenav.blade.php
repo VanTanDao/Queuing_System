@@ -30,15 +30,16 @@
                     <span class="nav-link-text ms-1">Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">
+
+            {{-- <li class="nav-item">
+                <a class="nav-link {{ str_contains(request()->url(), 'index') == true ? 'active' : '' }}" href="{{ route('thietbi', ['thietbi' => 'index']) }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Thiết bị</span>
                 </a>
-            </li>
+            </li> --}}
             {{-- <li class="nav-item mt-3 d-flex align-items-center">
                 <div class="ps-4">
                     <i class="fab fa-laravel" style="color: #f4645f;"></i>
@@ -55,7 +56,7 @@
                 </a>
             </li> --}}
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'user-management']) }}">
+                <a class="nav-link {{ str_contains(request()->url(), 'thietbi') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'thietbi']) }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-bullet-list-67 text-dark text-sm opacity-10"></i>
                     </div>
